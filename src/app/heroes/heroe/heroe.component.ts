@@ -12,13 +12,21 @@ export class HeroeComponent {
     edad: number = 45;
 
 
-    get nombreCapitalizado() {
+    get nombreCapitalizado(): string {
         return this.nombre.toLocaleUpperCase();
     }
 
     obtenerNombre(): string {
 
-        return `${this.nombre} - ${this.edad}`
+        return `${this.nombre} - ${this.edad}` //las comillas se llman backtikts 
     }
 
+
+    cambiarNombre(): void {
+        this.nombre = 'SpiderMan';
+    }
+
+    cambiarEdad(): void {
+        this.edad = 30;
+    }
 }
